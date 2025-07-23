@@ -114,7 +114,7 @@ body::before {
     position: absolute;
     top: 60px;
     right: 0px;
-    left: 240px;
+    left: 200px;
     width:120px;
     background-color: rgba(236, 141, 51, 0.50);
     border-radius: 10px;
@@ -315,15 +315,25 @@ body::before {
 
   .highlight-title {
     font-size: 1.2rem;
-    margin: 1rem auto;
+    /* margin: 1rem; */
+    margin-right: 2rem;
     width: 100%;
+
   }
 
   .download-btn {
     margin: 1.5rem auto;
     padding: 10px 20px;
     font-size: 14px;
+    display: block;
   }
+ 
+  a:has(.download-btn) {
+  text-decoration: none;
+}
+
+
+
 
   .linear__icon {
     font-size: 2.5rem;
@@ -648,61 +658,66 @@ body::before {
   margin: 0;
 
 }
-
 @media (max-width: 768px) {
   .experience {
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding: 20px 10px;
   }
 
   .timeline {
     flex-direction: column;
-    gap: 20px;
-    padding-right: 10px;
-    
+    gap: 30px;
+    padding: 0 10px;
   }
 
   .timeline-item {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-    margin-left: -10px;
-    /* padding: 20px 15px; */
-    
+    height: 70%;
+    margin-bottom: 40px;
+    margin-left: 0; /* ✅ REMOVE the negative margin */
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 2rem;
   }
 
   .timeline-item .icon-wrapper {
     text-align: center;
     margin-bottom: 10px;
+    margin-top: -2px;
   }
 
   .timeline-item .icon-wrapper img {
     width: 60px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .content h2 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin: 10px 0;
+    margin-top: 50px;
   }
 
   .content h4 {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 15px;
+    color: #FFCB61;
   }
 
   .inten-details {
     text-align: justify;
     font-size: 14px;
-    padding: 0 5px;
+    
   }
 
   .inten-details li {
     margin-bottom: 10px;
+    list-style: none;
+    margin-left: 0px;
   }
 }
 
