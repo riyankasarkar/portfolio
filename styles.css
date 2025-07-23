@@ -49,7 +49,7 @@ body::before {
 
 .logo img {
   height: 50px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   width: 150px;
 
 }
@@ -114,7 +114,7 @@ body::before {
     position: absolute;
     top: 60px;
     right: 0px;
-    left: 350px;
+    left: 240px;
     width:120px;
     background-color: rgba(236, 141, 51, 0.50);
     border-radius: 10px;
@@ -130,7 +130,7 @@ body::before {
   .nav-menu.show {
     display: flex;
   }
-
+ 
   .nav-menu li {
     width: 100%;
     margin: 10px 0;
@@ -276,7 +276,8 @@ body::before {
   .profile {
     width: 100%;
     margin-bottom: 2rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
   }
 
   .profile-circle {
@@ -300,8 +301,8 @@ body::before {
   }
   .info {
     width: 100%;
-    margin-left: 11rem;
-    margin-top: -3rem;
+    margin-left: 1rem;
+    margin-top: -4rem;
 
   }
 
@@ -331,28 +332,47 @@ body::before {
 }
 
 /*----------About------------------------*/
-.about-wrapper{
-  background-color: rgba(236, 141, 51, 0.05); /* Very light transparency */
-  backdrop-filter: blur(30px); /* Optional */
+.about-wrapper {
+  background-color: rgba(236, 141, 51, 0.05);
+  backdrop-filter: blur(30px);
   margin-top: 3rem;
   width: 90%;
-  margin-left:60px;
+  margin-left: auto;  /* ✅ center the wrapper */
+  margin-right: auto;
   border-radius: 10px;
-  border: 2px solid rgba(229, 226, 226, 0.05) ;
-  color:#FFCB61;
-  padding-bottom:5rem;
+  border: 2px solid rgba(229, 226, 226, 0.05);
+  color: #FFCB61;
+  padding-bottom: 5rem;
 }
-.about-details{
-  padding-left:5rem;
+
+.about-details {
+  padding-left: 5rem;
   padding-right: 5rem;
 }
 
 @media (max-width: 768px) {
-  .about-wrapper{
-    width: 81%;
-    margin-bottom: 3rem;
+  .about-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* ✅ Add some breathing room */
+  }
+
+  .about-details {
+    padding-left: 1rem;  /* ✅ Reduce padding for smaller screens */
+    padding-right: 1rem;
+  }
+
+  .about-details p {
+    font-size: 16px; /* ✅ Slightly smaller font for better readability */
+    text-align: justify;
+  }
+
+  .heading h1 {
+    font-size: 22px;
   }
 }
+
 /*-----------Skills ---------*/
 
 .skills {
@@ -514,7 +534,7 @@ body::before {
   }
 
   .skill-card {
-    width: 70%;
+    width: 80%;
     height: auto;
     padding-top: 60px;
     margin-bottom: 30px;
@@ -644,12 +664,12 @@ body::before {
   }
 
   .timeline-item {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-bottom: 50px;
-    
+    margin-left: -10px;
     /* padding: 20px 15px; */
-    margin-right: 20px;
+    
   }
 
   .timeline-item .icon-wrapper {
@@ -713,6 +733,7 @@ body::before {
   border: 2px solid rgba(229, 226, 226, 0.05) ;
   padding-bottom: 30px;
   display: flex;
+  padding-top: 40px;
   
 }
 .project-image{
@@ -720,6 +741,14 @@ body::before {
   width: 40%;
   height: 300px;
   margin-left: 1rem;
+}
+.project-image img{
+   width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 3.5rem;
+  margin-left: 2rem;
 }
 
 .project-details{
@@ -771,7 +800,7 @@ body::before {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-left: 30px;
     border-radius: 10px;
   }
 
